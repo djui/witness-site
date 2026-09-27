@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Witness is a private Apple Watch and iPhone app for capturing reactions now and understanding patterns later."
+    />
+    <meta name="application-name" content="Witness" />
+    <meta name="apple-mobile-web-app-title" content="Witness" />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#F4EDE1" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Witness" />
+    <meta property="og:title" content="Witness: Capture Now" />
+    <meta
+      property="og:description"
+      content="A private Apple Watch and iPhone app for catching moments of inner friction before the story changes."
+    />
+    <meta property="og:image" content="./social-preview.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Witness: Capture Now" />
+    <meta
+      name="twitter:description"
+      content="One mark on Watch. A field note on iPhone. Patterns only when there is evidence."
+    />
+    <meta name="twitter:image" content="./social-preview.svg" />
+    <title>Witness: Capture Now</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient-field" aria-hidden="true">
+      <span class="ambient-mark mark-a"></span>
+      <span class="ambient-mark mark-b"></span>
+      <span class="ambient-mark mark-c"></span>
+      <span class="ambient-line line-a"></span>
+      <span class="ambient-line line-b"></span>
+    </div>
+
+    <header class="site-header" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Witness home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Witness</span>
+      </a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#capture">Capture</a>
+        <a href="#screens">Screens</a>
+        <a href="#reflect">Reflect</a>
+        <a href="#patterns">Patterns</a>
+        <a href="#privacy">Privacy</a>
+      </nav>
+      <a class="header-cta" href="#early-access">Early access</a>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Private moment capture for Apple Watch and iPhone</p>
+          <h1>Capture reactions now. Understand patterns later.</h1>
+          <p class="hero-lede">
+            Witness helps you mark moments of friction, avoidance, impulse, tension,
+            relief, courage, or meaning as they happen. Later, the iPhone helps you
+            reconstruct what changed.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#early-access">Request early access</a>
+            <a class="button button-secondary" href="#loop">See the loop</a>
+          </div>
+          <dl class="trust-row" aria-label="Product principles">
+            <div>
+              <dt>No account by default</dt>
+              <dd>Local-first from the start.</dd>
+            </div>
+            <div>
+              <dt>No explanation now</dt>
+              <dd>One button. Under two seconds.</dd>
+            </div>
+            <div>
+              <dt>Evidence over advice</dt>
+              <dd>One moment is not a pattern.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="device-stage" aria-label="Witness product preview">
+          <div class="signal-orbit" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="watch-mockup parallax-layer" data-depth="-18" aria-label="Apple Watch capture preview">
+            <div class="watch-screen">
+              <p class="watch-time">14:42</p>
+              <button class="watch-button" type="button">Mark</button>
+              <p class="watch-subtext">Press when something happens inside.</p>
+              <p class="watch-confirmation">Marked.</p>
+            </div>
+          </div>
+          <div class="phone-mockup parallax-layer" data-depth="24" aria-label="iPhone reflection preview">
+            <div class="phone-bar"></div>
+            <div class="phone-content">
+              <p class="phone-caption">Waiting</p>
+              <article class="mark-card">
+                <div>
+                  <time>14:42</time>
+                  <strong>Avoided</strong>
+                </div>
+                <span>Waiting</span>
+              </article>
+              <article class="question-card">
+                <p>What happened?</p>
+                <span>Start with the facts. You can name it later.</span>
+              </article>
+              <article class="question-card muted">
+                <p>What did it protect?</p>
+              </article>
+              <article class="question-card muted">
+                <p>What did it cost?</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section product-screens" id="screens">
+        <div class="section-heading">
+          <p class="eyebrow">App previews</p>
+          <h2>Built around the two moments that matter.</h2>
+          <p>
+            The Watch does almost nothing by design. The iPhone becomes useful
+            later, when there is enough distance to reconstruct the moment.
+          </p>
+        </div>
+        <div class="screen-gallery" aria-label="Witness app screen previews">
+          <article class="screen-card tall">
+            <div class="screen-phone compact-phone" aria-hidden="true">
+              <div class="phone-bar"></div>
+              <div class="app-screen today-screen">
+                <header>
+                  <span>Today</span>
+                  <strong>3 waiting</strong>
+                </header>
+                <h3>Witness</h3>
+                <div class="waiting-stack">
+                  <div class="waiting-row active">
+                    <time>14:42</time>
+                    <span>Avoided</span>
+                    <b>Reconstruct</b>
+                  </div>
+                  <div class="waiting-row">
+                    <time>11:18</time>
+                    <span>Tensed</span>
+                    <b>Waiting</b>
+                  </div>
+                  <div class="waiting-row">
+                    <time>09:12</time>
+                    <span>Unlabeled</span>
+                    <b>Waiting</b>
+                  </div>
+                </div>
+                <div class="pattern-pulse">
+                  <span></span>
+                  <p>Most marks this week appeared before communication.</p>
+                </div>
+              </div>
+            </div>
+            <p class="screen-note">Waiting marks stay plain until the user gives them language.</p>
+          </article>
+
+          <article class="screen-card">
+            <div class="watch-stack" aria-hidden="true">
+              <div class="mini-watch">
+                <p>14:42</p>
+                <button type="button">Mark</button>
+                <span>Press when something happens inside.</span>
+              </div>
+              <div class="label-sheet">
+                <span>Avoided</span>
+                <span>Wanted</span>
+                <span>Tensed</span>
+                <span>Not sure</span>
+              </div>
+            </div>
+            <h3>Capture remains almost absurdly small.</h3>
+            <p>No typing. No diagnosis. No forced label.</p>
+          </article>
+
+          <article class="screen-card">
+            <div class="field-note" aria-hidden="true">
+              <p class="panel-kicker">Saved field note</p>
+              <h3>What happened at 14:42?</h3>
+              <p>You delayed replying because honesty felt like disappointing someone.</p>
+              <div class="tag-row">
+                <span>delayed honesty</span>
+                <span>communication</span>
+                <span>avoidance</span>
+              </div>
+            </div>
+            <h3>The summary is editable.</h3>
+            <p>Witness can suggest language, but the user keeps control.</p>
+          </article>
+
+          <article class="screen-card wide">
+            <div class="report-preview" aria-hidden="true">
+              <div>
+                <p class="panel-kicker">This week’s map</p>
+                <h3>This repeated.</h3>
+              </div>
+              <div class="report-grid">
+                <span>Communication friction appeared 6 times.</span>
+                <span>You reflected faster this week.</span>
+                <span>One useful question: what are you protecting?</span>
+                <span>One small test: send a placeholder reply.</span>
+              </div>
+            </div>
+            <h3>Reviews read like field reports.</h3>
+            <p>Few sections, plain evidence, and no vanity charts.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="capture">
+        <div>
+          <p class="eyebrow">Apple Watch capture</p>
+          <h2>The Watch only asks for a mark.</h2>
+        </div>
+        <div class="section-copy">
+          <p>
+            When the moment is happening, explanation is too expensive. Open Witness,
+            press Mark, feel a subtle haptic, and keep going.
+          </p>
+          <div class="mini-grid">
+            <article class="small-card">
+              <span class="dot"></span>
+              <h3>Marked.</h3>
+              <p>A timestamped witness mark is saved immediately.</p>
+            </article>
+            <article class="small-card">
+              <span class="dot"></span>
+              <h3>Optional label</h3>
+              <p>Avoided, Tensed, Wanted, Stayed, Left, Said yes, Said no.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split reverse" id="reflect">
+        <div class="reflection-panel">
+          <p class="panel-kicker">Reflection prompt</p>
+          <h3>What happened at 14:42?</h3>
+          <ul>
+            <li>What was happening?</li>
+            <li>What did you almost do?</li>
+            <li>What did you actually do?</li>
+            <li>What did it protect?</li>
+            <li>What did it cost?</li>
+          </ul>
+        </div>
+        <div>
+          <p class="eyebrow">iPhone reflection</p>
+          <h2>Reconstruct later, when you have room.</h2>
+          <p>
+            The iPhone turns a mark into a short field note. It asks factual
+            questions, then helps name tags and possible links without claiming
+            certainty.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="patterns">
+        <div class="section-heading">
+          <p class="eyebrow">Pattern map</p>
+          <h2>Where does friction repeat?</h2>
+          <p>
+            Witness avoids dense dashboards. Patterns are shown as evidence:
+            repeated marks, plain summaries, and language that stays humble.
+          </p>
+        </div>
+        <div class="pattern-grid">
+          <article class="pattern-card featured">
+            <div class="evidence-map" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <span>Strong signal</span>
+            <h3>Delayed honesty</h3>
+            <p>
+              This appears before messages where you need to disappoint, refuse,
+              or clarify something.
+            </p>
+            <footer>12 marks · Last seen yesterday</footer>
+          </article>
+          <article class="pattern-card">
+            <div class="evidence-map compact" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <span>Repeating</span>
+            <h3>Task-start friction</h3>
+            <p>You mark resistance before starting, not while doing.</p>
+            <footer>7 marks · Mostly mornings</footer>
+          </article>
+          <article class="pattern-card">
+            <div class="evidence-map compact" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <span>Emerging</span>
+            <h3>Saying yes too fast</h3>
+            <p>Several marks involve agreeing before checking capacity.</p>
+            <footer>4 marks · Evidence is thin</footer>
+          </article>
+        </div>
+      </section>
+
+      <section class="section loop-section" id="loop">
+        <div class="section-heading">
+          <p class="eyebrow">Product loop</p>
+          <h2>Catch the moment before the story changes.</h2>
+        </div>
+        <ol class="loop-list">
+          <li class="reveal-card"><span>1</span>Notice a moment.</li>
+          <li class="reveal-card"><span>2</span>Press Mark on Apple Watch.</li>
+          <li class="reveal-card"><span>3</span>Continue life.</li>
+          <li class="reveal-card"><span>4</span>Reconstruct on iPhone.</li>
+          <li class="reveal-card"><span>5</span>See what repeated.</li>
+          <li class="reveal-card"><span>6</span>Try one small test.</li>
+        </ol>
+      </section>
+
+      <section class="section privacy-section" id="privacy">
+        <div>
+          <p class="eyebrow">Privacy</p>
+          <h2>Local-first by product design.</h2>
+          <p>
+            Witness is built for private material. The default posture is simple:
+            keep marks on the device, make export available, and make sync,
+            location, health context, and AI optional.
+          </p>
+        </div>
+        <div class="privacy-list" aria-label="Privacy defaults">
+          <p><span></span>No account required for the MVP.</p>
+          <p><span></span>AI is a mirror, not a guru.</p>
+          <p><span></span>Export and delete controls are part of trust.</p>
+          <p><span></span>Witness does not diagnose, treat, or replace support.</p>
+        </div>
+      </section>
+
+      <section class="section trust-architecture">
+        <div class="section-heading">
+          <p class="eyebrow">Trust architecture</p>
+          <h2>Private material needs visible exits.</h2>
+        </div>
+        <div class="trust-grid">
+          <article class="trust-card">
+            <span>01</span>
+            <h3>Local storage first</h3>
+            <p>The core loop works without an account or cloud backend.</p>
+          </article>
+          <article class="trust-card">
+            <span>02</span>
+            <h3>Optional context</h3>
+            <p>Sync, health context, location, and AI are separate choices.</p>
+          </article>
+          <article class="trust-card">
+            <span>03</span>
+            <h3>Exportable notes</h3>
+            <p>Marks, reflections, tags, patterns, and reviews can leave the app.</p>
+          </article>
+          <article class="trust-card">
+            <span>04</span>
+            <h3>Editable insight</h3>
+            <p>Patterns can be renamed, hidden, merged, ignored, or corrected.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section definition-section">
+        <div class="definition-card">
+          <p class="eyebrow">What it is</p>
+          <ul>
+            <li>A private moment-capture system</li>
+            <li>A one-button witness mark</li>
+            <li>A friction map</li>
+            <li>A personal field notebook</li>
+          </ul>
+        </div>
+        <div class="definition-card quiet">
+          <p class="eyebrow">What it is not</p>
+          <ul>
+            <li>Not a mood tracker</li>
+            <li>Not a journal you must keep up with</li>
+            <li>Not a productivity score</li>
+            <li>Not a social network</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section early-access" id="early-access">
+        <div>
+          <p class="eyebrow">Early access</p>
+          <h2>Help shape the first TestFlight build.</h2>
+          <p>
+            The first version focuses on Watch capture, iPhone reflection, local
+            storage, pattern cards, and export. No cloud backend is required for the
+            core loop.
+          </p>
+          <div class="release-list" aria-label="First build scope">
+            <p><span>Now</span> Static product preview</p>
+            <p><span>Next</span> Watch capture prototype</p>
+            <p><span>Then</span> iPhone reflection and pattern cards</p>
+          </div>
+        </div>
+        <form class="access-form" aria-label="Early access signup">
+          <label for="email">Early access</label>
+          <p>
+            Join the list if you want to test a quiet local-first build and give
+            direct product feedback.
+          </p>
+          <div class="form-row">
+            <input id="email" type="email" name="email" placeholder="you@example.com" />
+            <button type="submit">Join list</button>
+          </div>
+          <p class="form-status" role="status">This static preview does not submit anywhere yet.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Witness should never tell you who you are. It should show what keeps happening.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>
