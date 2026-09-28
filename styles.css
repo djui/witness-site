@@ -183,22 +183,9 @@ input {
 }
 
 .brand-mark {
-  position: relative;
-  width: 18px;
-  height: 18px;
-  border: 1px solid var(--text-muted);
-  border-radius: 999px;
-}
-
-.brand-mark::after {
-  position: absolute;
-  top: 4px;
-  left: 8px;
-  width: 2px;
-  height: 9px;
-  content: "";
-  background: var(--accent);
-  border-radius: 999px;
+  width: 20px;
+  height: 20px;
+  background: url("./favicon.svg") center / contain no-repeat;
 }
 
 .nav-links {
